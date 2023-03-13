@@ -14,6 +14,10 @@ intercambia los valores de las variables apuntadas por a y b.
 */
 void swap(int *a, int *b) {
 
+  int *temp = a;
+  a = b;
+  b = temp;
+  
 }
 
 /*
