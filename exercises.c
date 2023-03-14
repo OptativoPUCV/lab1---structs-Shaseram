@@ -42,9 +42,8 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
     if (a[i] < *min)
       *min = a[i];
   }
-  
-  
 }
+
 
 
 /*
@@ -62,9 +61,17 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona * p = (Persona *) malloc(sizeof(Persona));
+  Persona * p = (Persona *) malloc(sizeof(Persona));
+  if (p == NULL)
+  {
+    exit(EXIT_FAILURE);
+  }
+  
    //asignar valores de entrada a los campos de p
-
+  
+  strcpy(p->nombre, nombre);
+  strcpy(p->rut, rut);
+  p->edad = edad;
 
    return p;
 }
