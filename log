@@ -28,3 +28,17 @@ Tue 14 Mar 2023 06:04:44 PM UTC:
  tests:  3|4
 total_score: 30/70
 9a4a0d8
+Wed 15 Mar 2023 02:31:54 PM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:98:41: error: ‘*v.capacidad’ may be used uninitialized [-Werror=maybe-uninitialized]
+   98 |   v->datos = (int *) realloc(v->datos, v->capacidad * sizeof(int));
+      |                                        ~^~~~~~~~~~~
+exercises.c:98:31: error: ‘*v.datos’ may be used uninitialized [-Werror=maybe-uninitialized]
+   98 |   v->datos = (int *) realloc(v->datos, v->capacidad * sizeof(int));
+      |                              ~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+242b596
