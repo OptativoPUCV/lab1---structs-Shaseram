@@ -72,3 +72,9 @@ exercises.c:100:31: error: ‘*v.datos’ may be used uninitialized [-Werror=may
 cc1: all warnings being treated as errors
 Compilation failed
 80f2b9b
+Wed 15 Mar 2023 02:55:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+13a8142
