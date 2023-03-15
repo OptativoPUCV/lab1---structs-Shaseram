@@ -96,14 +96,12 @@ Vector * crearVector(int n) {
   v = (Vector *) malloc(sizeof(Vector) * n);
   if (v == NULL) return NULL;
 
-  v->datos = (int *) realloc(NULL, n * sizeof(int));
+  v->datos = (int *) calloc(n, sizeof(int));
   if (v->datos == NULL) return NULL;
 
   v->capacidad = n;
   
-  
   return v;
-
 }
 
 /*
