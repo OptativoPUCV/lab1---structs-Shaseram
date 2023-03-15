@@ -96,6 +96,9 @@ Vector * crearVector(int n) {
   if (v == NULL) return NULL;
 
   v->datos = (int *) realloc(v->datos, v->capacidad * sizeof(int));
+  if (v->datos == NULL) return NULL;
+
+  
   
   return v;
 
