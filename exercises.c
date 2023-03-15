@@ -100,6 +100,7 @@ Vector * crearVector(int n) {
   v->datos = (int *) realloc(NULL, n * sizeof(int));
   if (v->datos == NULL) return NULL;
 
+  v->capacidad = n;
   
   
   return v;
