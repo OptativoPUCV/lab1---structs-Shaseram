@@ -101,7 +101,6 @@ Vector * crearVector(int n) {
 
   v->capacidad = n;
   
-  free(v);
   
   return v;
 
